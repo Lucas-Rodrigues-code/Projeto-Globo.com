@@ -1,0 +1,220 @@
+/*logo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem {
+    width: 171px;
+    height: 36px;
+
+    margin-top: 22px;
+}
+
+/*Menu*/
+    
+.menu{
+    height: 40px;
+    margin-top: 22px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+
+    border: 1px solid #E5E5E5;
+}
+
+.g1{
+    color:#C3170C ;
+    margin-left: 140px;
+}
+.globo{
+    color: #1E4B9B;
+}
+.valor{
+    color: #006766;
+}
+.ge{
+color: #07AA47;
+}
+.cartola{
+    color: #E3662B;
+}
+.globoplay{
+    color: #FB0735;
+}
+.dropz{
+    color: #FF75BB;
+}
+.gshow{
+    color: #EC7D00;
+}
+.quem{
+    color: #323333;
+}
+.receitas{
+    color: #A81D83;
+    margin-right: 140px;
+}
+
+
+/* conteudos */
+
+.container{
+    display: flex;
+    margin-left: 100px;
+}
+
+.materia-principal{
+    width: 540px;
+    height: 251px;
+    
+    font-weight: 700;
+    margin-top: 20px;
+}
+.materias{
+    width: 630px;
+    height: auto;
+   
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.side-bar{
+    width: auto;
+    height: 600px;
+    /* background-color: #1E4B9B; */
+
+    display: flex;
+
+}
+
+
+
+.side-bar{
+    margin-left: 50px;
+}
+
+.titulo-material-prin{
+    font-size: 52px;
+    color: #C4160C;
+}
+
+.subtitulo{
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.titulo1{
+    font-size: 14px;
+    color:#C4170C ;
+    font-weight: 500;
+}
+.titulo2{
+    font-size: 20px;
+    color:#2F3134 ;
+    font-weight: 700;
+}
+.titulo3{
+    font-size: 14px;
+    color:#2F3134 ;
+    font-weight: 400;
+    margin-top: 10px;
+}
+        
+
+.materias-quadros{
+   
+    width: 193px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.barra-meio{
+    background-color: #EBEDEF;
+    width: 1px;
+    height: auto;
+}
+
+.barra{
+    width: auto;
+    height: 1px;
+    background-color: #EBEDEF;
+    margin-bottom: 10px;
+}
+
+.side-materia1{
+    width: 250px;
+    height: 700px;
+    /* background-color: #07AA47; */
+
+    margin-top: 20px;
+}
+.side-materia2{
+    width: 250px;
+    height: auto;
+    /* background-color: #030303; */
+    margin-top: 20px;
+}
+
+.materias-quadros-side{
+    width: 240px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color-de
+}
+a { 
+    color: inherit;
+ } 
+ 
+.menu a:hover{
+    font-size: 30px;
+}
+
+@media (max-width:600px){
+    .globo, .valor, .receitas,.quem, .receitas,.gshow,.globoplay{
+        display: none;
+    }
+    .container, .materias, .side-bar{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        width: auto;
+    }
+    .side-bar{
+        margin-left: 10px;
+    }
+    .titulo-material-prin{
+        font-size: 20px;
+        width: auto;
+    }
+    .materia-principal{
+        width: auto;
+        height: auto;
+        margin: 10px 50px 10px 50px;
+    }
+   .menu{
+    margin-left: 0;
+    
+   }
+}
+        
