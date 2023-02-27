@@ -10,18 +10,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 22px;
 }
 
 .imagem {
     width: 171px;
     height: 36px;
-
-    margin-top: 22px;
 }
 
 /*Menu*/
     
-.menu{
+.menu, .menu-mobile{
     height: 40px;
     margin-top: 22px;
 
@@ -36,9 +35,22 @@ body{
     border: 1px solid #E5E5E5;
 }
 
+@media (max-width:600px){
+    .menu{
+        display: none;
+    }
+}
+
+@media (min-width:600px){
+    .menu-mobile{
+        display: none;
+    }
+}
+
 .g1{
     color:#C3170C ;
-    margin-left: 140px;
+    width: auto;
+   
 }
 .globo{
     color: #1E4B9B;
@@ -48,6 +60,7 @@ body{
 }
 .ge{
 color: #07AA47;
+width: auto;
 }
 .cartola{
     color: #E3662B;
@@ -60,13 +73,24 @@ color: #07AA47;
 }
 .gshow{
     color: #EC7D00;
+    width: auto;
 }
 .quem{
     color: #323333;
 }
 .receitas{
     color: #A81D83;
-    margin-right: 140px;
+    
+}
+.videos{
+    color: blue;
+    width: auto;
+    
+}
+.tech{
+    color: blue;
+    width: auto;
+    
 }
 
 
@@ -74,7 +98,9 @@ color: #07AA47;
 
 .container{
     display: flex;
-    margin-left: 100px;
+    justify-content: center;
+
+    
 }
 
 .materia-principal{
@@ -83,6 +109,8 @@ color: #07AA47;
     
     font-weight: 700;
     margin-top: 20px;
+
+  
 }
 .materias{
     width: 630px;
@@ -96,7 +124,7 @@ color: #07AA47;
 .side-bar{
     width: auto;
     height: 600px;
-    /* background-color: #1E4B9B; */
+    
 
     display: flex;
 
@@ -162,14 +190,12 @@ color: #07AA47;
 .side-materia1{
     width: 250px;
     height: 700px;
-    /* background-color: #07AA47; */
 
     margin-top: 20px;
 }
 .side-materia2{
     width: 250px;
     height: auto;
-    /* background-color: #030303; */
     margin-top: 20px;
 }
 
@@ -180,7 +206,7 @@ color: #07AA47;
 
 a {
     text-decoration: none;
-    color-de
+   
 }
 a { 
     color: inherit;
@@ -191,30 +217,38 @@ a {
 }
 
 @media (max-width:600px){
-    .globo, .valor, .receitas,.quem, .receitas,.gshow,.globoplay{
-        display: none;
-    }
+    
     .container, .materias, .side-bar{
+        display: flex;
         flex-direction: column;
-        margin: 0;
-        align-items: center;
+        
         width: auto;
     }
     .side-bar{
-        margin-left: 10px;
+         margin-left: 10px;
     }
     .titulo-material-prin{
         font-size: 20px;
         width: auto;
     }
     .materia-principal{
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .materias{
         width: auto;
         height: auto;
-        margin: 10px 50px 10px 50px;
+        
     }
    .menu{
     margin-left: 0;
     
+   }
+
+   .menu-mobile{
+    width: auto;
    }
 }
         
